@@ -1,0 +1,528 @@
+
+
+/*===========================
+    1. COMMON css 
+===========================*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html,
+body{
+    height: 100%;
+}
+
+
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+ body {
+	font-family: $rob;
+	font-weight: 400;
+	font-size: 16px;
+    color: $text-color;
+    line-height: 25px;
+     overflow-x: hidden;
+     
+}
+
+
+
+img {
+	max-width: 100%;
+}
+
+a{
+	@include transition(0.3s);
+	text-decoration: none;
+    color: $black;
+	&:hover{
+		color: $theme-color;
+	}
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover{
+	text-decoration: none;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $rob;
+	font-weight: 700;
+	color: $black;
+    margin: 0px 0 15px;
+    line-height: normal;
+
+}
+
+.binduz-er-title{
+    text-transform: capitalize;
+}
+
+
+p {
+	margin: 0 0 15px;
+}
+
+
+
+.slick-slide {
+	outline: 0;
+}
+
+
+.page-link:focus {
+	box-shadow:none;
+}
+.binduz-er-bg-cover{
+	position: absolute;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.slick-slide img{
+    display: inline-block;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+}
+
+.gray-bg{
+    &.bg-2{
+        background: #f8f8f8;
+    }
+}
+
+
+// others common css here
+
+
+
+/*===== All Button Style =====*/
+
+.binduz-er-main-btn {
+	display: inline-block;
+	font-weight: 500;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	@include user-select(none);
+	border: 1px solid $heading-color;
+	padding: 0 48px;
+	font-size: 14px;
+	line-height: 50px;
+	border-radius: 10px;
+    color: $white;
+    cursor: pointer;
+    z-index: 5;
+    @include transition(0.4s);
+    background-color: $heading-color;
+    
+    &:hover{
+        background-color: $theme-color;
+        color: $white    ;
+        border-color: $theme-color;
+    }
+    
+    &.binduz-er-main-btn-2{
+        background-color: $white;
+        color: $theme-color;
+        border-color: $theme-color;
+        &:hover{
+            background-color: $theme-color;
+            border-color: $theme-color;
+            color: $white;
+        }
+    }
+}
+
+
+
+
+
+
+/*----------------------------------------
+   offcanvas menu
+----------------------------------------*/
+
+
+
+
+
+.binduz-er-news-off_canvars_overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    cursor: crosshair;
+    background: #232323;
+    top: 0;
+    &.binduz-er-news-active{
+        opacity: .5;
+        visibility: visible;
+    }
+}
+
+
+.binduz-er-news-offcanvas_menu {
+    &.binduz-er-news-offcanvas_menu_left{
+        & .binduz-er-news-offcanvas_menu_wrapper{
+            left: 0;
+            right: auto;
+            margin-right: 0;
+            margin-left: -310px;
+            &.binduz-er-news-active{
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+.binduz-er-news-offcanvas_menu_wrapper {
+    width: 310px;
+    position: fixed;
+    background: #fff;
+    z-index: 9999;
+    top: 0;
+    height: 100vh;
+    transition: .5s;
+    right: 0;
+    margin-right: -310px;
+    padding: 50px 15px 30px;
+    overflow-y: auto;
+    &.binduz-er-news-active{
+        margin-right: 0;
+    }
+
+    & .binduz-er-news-header-btn{
+        margin-bottom: 30px;
+        & a{
+            color: $black;
+            &:hover{
+                color: $black;
+            }
+        }
+    }
+    & .binduz-er-news-header-social{
+        padding-bottom: 30px;
+        & ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            & li{
+                display: inline-block;
+                & a{
+                    font-size: 14px;
+                    margin: 0 5px;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+.binduz-er-news-offcanvas_main_menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    & li{
+        position: relative;
+        &:last-child{
+            margin: 0;
+        }
+        & span{
+            &.menu-expand{
+                position: absolute;
+                right: 0;
+                cursor: pointer;
+
+            }
+        }
+        & a{
+            font-size: 15px;
+            font-weight: 400;
+            text-transform: capitalize;
+            display: block;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ededed;
+            color: $text-color;
+            @include transition(0.3s);
+            &:hover{
+                color: $theme-color;
+            }
+
+        }
+        & ul{
+            list-style-type:none;
+            &.binduz-er-news-sub-menu{
+                padding-left: 20px;
+                list-style-type: none;
+            }
+        }
+    }
+}
+
+
+.binduz-er-news-offcanvas_footer {
+    margin-top: 30px;
+    padding-bottom: 50px;
+    text-align: left;
+    & p{
+        font-size: 14px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        line-height: 24px;
+    }
+    & ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        & li{
+            font-size: 14px;
+            line-height: 30px;
+            padding-bottom: 15px;
+            position: relative;
+            padding-left: 24px;
+            
+            & i{
+                color: $theme-color;
+                position: absolute;
+                left: 0;
+                top: 7px;
+            }
+        }
+    }
+}
+
+
+
+
+
+.binduz-er-news-canvas_close {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    & a{
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 32px;
+        height: 32px;
+        display: block;
+        text-align: center;
+        line-height: 32px;
+        border: 1px solid #ededed;
+        border-radius: 50%;
+        color: $black;
+        @include transition(0.3s);
+        &:hover{
+            background: $theme-color;
+            border-color: $theme-color;
+            color: #fff;
+
+        }
+    }
+}
+
+.binduz-er-news-canvas_open {
+    & a{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+/*===========================
+    SEARCH css 
+===========================*/
+
+
+.binduz-er-news-search-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999999;
+    @include transform(translateY(-100%));
+    @include transition(0.6s);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.04);
+
+    & .binduz-er-news-search-header {
+        & .binduz-er-news-search-title {
+            font-size: 24px;
+            font-weight: 500;
+            color: $white;
+        }
+
+        & .binduz-er-news-search-close {
+            & button {
+                background: none;
+                border: 0;
+                font-size: 24px;
+                font-weight: 500;
+                color: $white;
+                padding-right: 35px;
+                position: relative;
+
+                & span {
+                    width: 21px;
+                    height: 2px;
+                    background-color: $white;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+
+                    &:nth-child(1) {
+                        top: 13px;
+                        @include transform(rotate(45deg));
+                    }
+
+                    &:nth-child(2) {
+                        @include transform(rotate(135deg));
+                        top: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    & .binduz-er-news-search-body {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        @include transform(translateY(-50%));
+
+        & .binduz-er-news-search-form {
+            position: relative;
+
+            & input {
+                width: 100%;
+                border: 0;
+                height: 80px;
+                padding-left: 30px;
+                border: 2px solid #fff;
+                border-radius: 50px;
+                font-size: 20px;
+                color: #707070;
+
+                &::placeholder {
+                    color: #707070;
+                    opacity: 1;
+                }
+            }
+
+            & button {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 60px;
+                font-size: 36px;
+                color: #707070;
+                background: none;
+                border: 0;
+            }
+        }
+    }
+
+    & .binduz-er-news-search-footer {
+        padding-bottom: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        & .binduz-er-news-search-footer-content {
+            & h4 {
+                color: #707070;
+                font-size: 24px;
+            }
+
+            & p {
+                color: $black;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.binduz-er-news-search-box.open {
+    @include transform(translateY(0));
+}
+
+
+
+
+
+.binduz-er-newsr-white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 30px;
+  width: auto;
+  max-width: 800px;
+  margin: 20px auto;
+    & iframe{
+        width: 100%;
+        height: 400px;
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

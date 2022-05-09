@@ -1,0 +1,558 @@
+/*===========================
+    18.BINDUZ AUTHOR USER css 
+===========================*/
+
+
+
+
+
+.binduz-er-author-user-area{
+
+}
+
+
+
+
+
+
+
+.binduz-er-author-box{
+    background: $white;
+    padding: 40px 40px 65px;
+    margin-bottom: 60px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: relative;
+    @media #{$md} {
+        display: block;
+        padding: 40px 40px 80px;
+    }
+    @media #{$xs} {
+        display: block;
+        padding: 40px 20px 80px;
+    }
+    @media #{$xs} {
+        display: block;
+        padding: 20px;
+    }
+    @media #{$sm} {
+        display: block;
+        padding: 40px 40px 80px;
+    }
+    & .binduz-er-thumb{
+        min-width: 240px;
+        margin-right: 49px;
+        position: relative;
+        height: 240px;
+        & img{
+            width: 100%;
+        }
+        @media #{$md} {
+            min-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        @media #{$xs} {
+            min-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        & span{
+            position: absolute;
+            left: 50%;
+            bottom: -25px;
+            transform: translateX(-50%);
+            display: inline-block;
+            line-height: 50px;
+            padding: 0 32px;
+            background: $white;
+            box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.04);
+        }
+    }
+    & .binduz-er-content{
+        padding-right: 30px;
+        padding-top: 14px;
+        @media #{$laptop} {
+            padding-top: 0;
+        }
+        @media #{$lg} {
+            padding-top: 0;
+        }
+        @media #{$md} {
+            padding-right: 0;
+        }
+        @media #{$xs} {
+            padding-right: 0;
+        }
+        & p{
+            font-size: 24px;
+            line-height: 40px;
+            @media #{$lg} {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @media #{$md} {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @media #{$xs} {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        & .binduz-er-meta-author{
+            & span{
+                font-weight: 700;
+                color: $black;
+                & span{
+                    font-weight: 400;
+                    color: #E74D58;
+                }
+            }
+        }
+    }
+    & .binduz-er-author-contact{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media #{$md} {
+            right: auto;
+            left: 40px;
+        }
+        @media #{$xs} {
+            right: auto;
+            left: 40px;
+            display: none !important;
+        }
+        @media #{$sm} {
+            right: auto;
+            left: 40px;
+            display: flex !important;
+        }
+        & ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            & li{
+                display: inline-block;
+                & a{
+                    display: inline-block;
+                    height: 60px;
+                    width: 60px;
+                    background: #EFEFEF;
+                    color: $text-color;
+                    text-align: center;
+                    line-height: 60px;
+                    margin-right: 4px;
+                    font-size: 18px;
+                }
+                &:nth-child(2){
+                    &:hover{
+                        & a{
+                            background: #55ACEE;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    &:hover{
+                        & a{
+                            background: #0056FF;
+                        }
+                    }
+                }
+                &:nth-child(4){
+                    &:hover{
+                        & a{
+                            background: #CD201F;
+                        }
+                    }
+                }
+                &:hover{
+                    & a{
+                        background: #3B5999;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        & .binduz-er-contact-link{
+            & a{
+                display: inline-block;
+                line-height: 60px;
+                background: #E74D58;
+                color: $white;
+                padding: 0 40px;
+                margin-left: 4px;
+            }
+        }
+    }
+}
+
+
+.binduz-er-author-sidebar-search-bar{
+    & .binduz-er-input-box{
+        position: relative;
+        & button{
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: #E74D58;
+            height: 62px;
+            width: 60px;
+            border: 0;
+            color: $white;
+            font-size: 18px;
+        }
+        & input{
+            width: 100%;
+            border: 0;
+            background: $white;
+            line-height: 60px;
+            padding-left: 30px;
+            color: $black;
+            box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.04);
+            &::placeholder{
+                opacity: 1;
+                color: #D2D2D2;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+
+
+.binduz-er-populer-news-social{
+    & .binduz-er-recently-viewed-item{
+        & .binduz-er-latest-news-item{
+            background-color: transparent;
+            & .binduz-er-thumb{
+                & .binduz-er-play{
+                    position: absolute;
+                    left: 1px;
+                    bottom: 1px;
+                    top: auto;
+                    & a{
+                        border-radius: 0;
+                        background: #F8F8F8;
+                        color: #E74D58;
+                    }
+                }
+            }
+
+            & .binduz-er-content{
+                & .binduz-er-meta-categories{
+                    & a{
+                        background: #FFE7E9;
+                        color: #E74D58;
+                    }
+                }
+                & .binduz-er-title{
+                    & a{
+                        &:hover{
+                            color: #E74D58;
+                        }
+                    }
+                }
+                & .binduz-er-meta-author{
+                    & span{
+                        color: #C7C7C7;
+                        & span{
+                            color: $text-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.binduz-er-author-item{
+    background: $white;
+    margin-right: 20px;
+    @media #{$lg} {
+        margin-right: 0;
+    }
+    @media #{$md} {
+        margin-right: 0;
+    }
+    @media #{$xs} {
+        margin-right: 0;
+    }
+    & .binduz-er-thumb{
+        & img{
+            width: 100%;
+        }
+    }
+    & .binduz-er-content{
+        padding: 50px;
+        @media #{$md} {
+            padding: 30px;
+        }
+        @media #{$xs} {
+            padding: 20px;
+        }
+        @media #{$sm} {
+            padding: 30px;
+        }
+        & .binduz-er-meta-item{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            @media #{$xs} {
+                display: block;
+            }
+            @media #{$sm} {
+                display: flex;
+            }
+            & .binduz-er-meta-categories{
+                margin-right: 30px;
+                & a{
+                    background: #FFE7E9;
+                    color: #E74D58;
+                    display: inline-block;
+                    line-height: 30px;
+                    padding: 0 14px;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+            & .binduz-er-meta-date{
+                @media #{$xs} {
+                    margin-top: 10px;
+                    margin-left: 0;
+                }
+                @media #{$sm} {
+                    margin-top: 0px;
+                    margin-left: 10px;
+                }
+                & span{
+                    font-size: 14px;
+                    color: $text-color;
+                    & i{
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+        & .binduz-er-title{
+            font-size: 46px;
+            line-height: 58px;
+            letter-spacing: -1px;
+            margin-top: 20px;
+            @media #{$laptop} {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            @media #{$lg} {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            @media #{$md} {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            @media #{$xs} {
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0;
+            }
+            @media #{$sm} {
+                font-size: 32px;
+                line-height: 42px;
+            }
+            & a{
+                color: $black;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        & .binduz-er-meta-author {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+
+            @media #{$xs} {
+                display: block;
+            }
+
+            @media #{$sm} {
+                display: flex;
+            }
+
+            & .binduz-er-author {
+                & img {
+                    margin-right: 15px;
+                }
+
+                & span {
+                    color: $text-color;
+
+                    & span {
+                        color: $black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            & .binduz-er-meta-list {
+                @media #{$xs} {
+                    margin-top: 20px;
+                }
+
+                @media #{$sm} {
+                    margin-top: 0px;
+                }
+
+                & ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+
+                    & li {
+                        display: inline-block;
+                        margin-left: 15px;
+                        padding-left: 15px;
+                        line-height: 14px;
+                        border-left: 1px solid #DDDDDD;
+
+                        @media #{$lg} {
+                            margin-left: 10px;
+                            padding-left: 10px;
+                        }
+
+                        @media #{$xs} {
+                            border-left: 0;
+                            margin-left: 0;
+                        }
+
+                        @media #{$sm} {
+                            border-left: 1px solid #DDDDDD;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.binduz-er-archived-sidebar-about{
+    background: $white;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 50px 0 0;
+    & .binduz-er-user{
+        height: 140px;
+        width: 140px;
+        display: inline-block;
+        position: relative;
+        & .binduz-er-icon{
+            position: absolute;
+            right: 0;
+            top: 0;
+            box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.08);
+            background: $white;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            line-height: 50px;
+            color: $theme-color;
+        }
+    }
+    & span{
+        font-size: 14px;
+        text-transform: capitalize;
+        padding-top: 22px;
+        padding-bottom: 3px;
+        display: block;
+    }
+    & .binduz-er-title{
+        font-size: 20px;
+    }
+    & ul{
+        margin: 43px 0 0;
+        padding: 0;
+        list-style-type: none;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+        & li{
+            display: inline-block;
+            & a{
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                background: #EFEFEF;
+                color: $text-color;
+                text-align: center;
+                line-height: 40px;
+                margin: 0 4px;
+            }
+            &:nth-child(2){
+                &:hover{
+                    & a{
+                        background: #55ACEE;
+                    }
+                }
+            }
+            &:nth-child(3){
+                &:hover{
+                    & a{
+                        background: #0056FF;
+                    }
+                }
+            }
+            &:nth-child(4){
+                &:hover{
+                    & a{
+                        background: #CD201F;
+                    }
+                }
+            }
+            &:hover{
+                & a{
+                    background: #3B5999;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

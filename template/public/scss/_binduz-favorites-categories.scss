@@ -1,0 +1,70 @@
+/*===========================
+    12.BINDUZ FAVORITES CATEGORIES css 
+===========================*/
+
+
+
+
+.binduz-er-favorites-categories-area{
+    padding-bottom: 60px;
+}
+
+
+.binduz-er-favorites-categories-box{
+    background: $white;
+    padding: 60px;
+    @media #{$md} {
+        padding: 30px;
+    }
+    @media #{$xs} {
+        padding: 30px;
+    }
+    & .binduz-er-favorites-categories-list{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        @media #{$lg} {
+            flex-wrap: wrap;
+        }
+        @media #{$md} {
+            flex-wrap: wrap;
+        }
+        @media #{$xs} {
+            flex-wrap: wrap;
+        }
+        & .binduz-er-item{
+            margin-right: 40px;
+            @media #{$laptop} {
+                margin-right: 20px;
+            }
+            @media #{$lg} {
+                margin-right: 5px;
+                margin-bottom: 15px;
+                width: 16%;
+            }
+            @media #{$md} {
+                margin-right: 20px;
+                margin-bottom: 15px;
+            }
+            @media #{$xs} {
+                margin-right: 13px;
+                margin-bottom: 15px;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            & span{
+                display: block;
+                font-size: 14px;
+                color: $black;
+                padding-top: 12px;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+}

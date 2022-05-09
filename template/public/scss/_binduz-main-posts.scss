@@ -1,0 +1,420 @@
+/*===========================
+    8.BINDUZ MAIN POST css 
+===========================*/
+
+
+.binduz-er-main-posts-area{
+    padding-top: 53px;
+    padding-bottom: 60px;
+}
+
+
+.binduz-er-main-posts-item{
+    margin-bottom: 30px;
+    & .binduz-er-trending-news-list-box{
+        display: block;
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
+        & .binduz-er-thumb{
+            min-width: 100%;
+            height: auto;
+            margin-right: 0;
+            border-radius: 0;
+            & img{
+                width: 100%;
+                transition: all linear 0.5s;
+            }
+            @media #{$xs} {
+                margin-bottom: 0;
+            }
+        }
+        & .binduz-er-content{
+            border: 2px solid #F4F4F4;
+            border-top: 0px;
+            padding-top: 30px;
+            padding-left: 28px;
+            padding-right: 28px;
+            font-size: 14px;
+            border-radius: 0 0 10px 10px;
+            @media #{$laptop} {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
+            }
+            & .binduz-er-trending-news-list-title{
+                & .binduz-er-title{
+                    margin-bottom: 5px;
+                }
+            }
+            & .binduz-er-meta-item{
+                & .binduz-er-meta-date{
+                    margin-left: 15px;
+                    @media #{$laptop} {
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+        &:hover{
+            & .binduz-er-thumb{
+                & img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+
+.binduz-er-sidebar-about{
+    @media #{$md} {
+        margin-top: 50px;
+    }
+    @media #{$xs} {
+        margin-top: 50px;
+    }
+
+    & .binduz-er-sidebar-title {
+        border-bottom: 2px solid #FFEAEA;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 100%;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #FFEAEA;
+            border-right: 10px solid transparent;
+        }
+
+        & .binduz-er-title {
+            display: inline-block;
+            background: #FFEAEA;
+            margin-bottom: 0;
+            line-height: 30px;
+            padding: 0 20px;
+            font-size: 14px;
+            font-weight: 700;
+            color: $theme-color;
+        }
+    }
+}
+
+
+.binduz-er-sidebar-about{
+    & .binduz-er-sidebar-about-item{
+        margin-top: 35px;
+        & .binduz-er-sidebar-about-user{
+            @media #{$lg} {
+                display: block !important;
+            }
+            & .binduz-er-thumb{
+                margin-right: 20px;
+                max-width: 80px;
+                height: 80px;
+                @media #{$lg} {
+                    margin-bottom: 10px;
+                }
+            }
+            & .binduz-er-content{
+                & .binduz-er-title{
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                }
+                & span{
+                    font-size: 14px;
+                }
+                & ul{
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    & li{
+                        display: inline-block;
+                        & a{
+                            color: #C3C3C3;
+                            margin-right: 20px;
+                            font-size: 14px;
+                            &:hover{
+                                color: $theme-color;
+                            }
+                        }
+                        &:last-child{
+                            & a{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .binduz-er-text{
+            font-size: 14px;
+            padding-top: 13px;
+            & a{
+                font-size: 14px;
+                font-weight: 700;
+                background: $theme-color;
+                border-color: $theme-color;
+                &:hover{
+                    background: $heading-color;
+                    border-color: $heading-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+.binduz-er-sidebar-latest-post{
+    margin-top: 40px;
+    @media #{$md} {
+        margin-bottom: 30px;
+    }
+    @media #{$xs} {
+        margin-bottom: 30px;
+    }
+    & .binduz-er-sidebar-title {
+        border-bottom: 2px solid #FFEAEA;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 100%;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #FFEAEA;
+            border-right: 10px solid transparent;
+        }
+
+        & .binduz-er-title {
+            display: inline-block;
+            background: #FFEAEA;
+            margin-bottom: 0;
+            line-height: 30px;
+            padding: 0 20px;
+            font-size: 14px;
+            font-weight: 700;
+            color: $theme-color;
+        }
+    }
+}
+
+
+
+
+
+.binduz-er-sidebar-latest-post-box{
+    margin-top: 35px;
+    & .binduz-er-sidebar-latest-post-item{
+        margin-bottom: 20px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        @media #{$lg} {
+            display: block;
+        }
+        & .binduz-er-thumb{
+            max-width: 80px;
+            height: 80px;
+            margin-right: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            @media #{$laptop} {
+                margin-right: 15px;
+            }
+            @media #{$lg} {
+                margin-bottom: 10px;
+            }
+        }
+        & .binduz-er-content{
+            & span{
+                font-size: 14px;
+                color: #666;
+                
+            }
+            & .binduz-er-title{
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 0;
+                @media #{$laptop} {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                & a{
+                    color: $black;
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.binduz-er-sidebar-add-box{
+    background-image: url(../images/space-bg-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    padding: 60px 45px 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #C8C8C8;
+    @media #{$laptop} {
+        padding: 30px 20px 30px;
+    }
+    @media #{$lg} {
+        padding: 30px 20px 30px;
+    }
+    @media #{$md} {
+        width: 50%;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+    & p{
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+    & > a{
+        background: $theme-color;
+        border-color: $theme-color;
+        @media #{$lg} {
+            padding: 0 20px;
+        }
+        &:hover{
+            background: $heading-color;
+            border-color:  $heading-color;
+        }
+    }
+    
+}
+
+
+
+
+
+.binduz-er-social-share-box{
+    @media #{$lg} {
+        flex-wrap: wrap;
+        
+    }
+    @media #{$md} {
+        display: none !important;
+        
+    }
+    @media #{$xs} {
+        display: none !important;
+        
+    }
+}
+
+
+.binduz-er-social-share-item{
+    background-image: url(../images/instagram-bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    @media #{$laptop} {
+        padding-left: 30px;
+    }
+    @media #{$lg} {
+        width: 33.3%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+    & a{
+        & i{
+            display: block;
+            font-size: 50px;
+            color: $white;
+        }
+        & span{
+            font-size: 30px;
+            font-weight: 700;
+            color: $white;
+            display: inline-block;
+            margin-top: 7px;
+            @media #{$laptop} {
+                font-size: 24px;
+            }
+            & span{
+                font-weight: 300;
+            }
+        }
+    }
+    &.binduz-facebook{
+        background-image: none;
+        background-color: #4267B2;
+    }
+    &.binduz-twitter{
+        background-image: none;
+        background-color: #1DA1F2;
+    }
+    &.binduz-pinterest{
+        background-image: none;
+        background-color: #E60023;
+    }
+    &.binduz-dribbble{
+        background-image: none;
+        background-color: #ea4c89;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

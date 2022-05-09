@@ -1,0 +1,329 @@
+/*===========================
+    14.BINDUZ EDITORS PACK css 
+===========================*/
+
+
+.binduz-er-editors-pack-white-area{
+    &.binduz-er-editors-pack-dark-area{
+        padding-top: 60px;
+        padding-bottom: 30px;
+        background: $black;
+        & .binduz-er-editors-pack-title{
+            border-top-color: #202020;
+            & .binduz-er-title{
+                color: $white;
+            }
+            & a{
+                color: $theme-color;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        & .binduz-er-editors-pack-content{
+            background: $black;
+            & .binduz-er-meta-item{
+                & .binduz-er-meta-categories{
+                    & a{
+                        background: $theme-color;
+                        color: $white;
+                    }
+                }
+                & .binduz-er-meta-date{
+                    & span{
+                        color: #999;
+                    }
+                }
+            }
+            & .binduz-er-title{
+                color: $white;
+                & a{
+                    color: $white;
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+            & .binduz-er-meta-author{
+                & span{
+                    color: #555;
+                    & span{
+                        color: $white;    
+                    }
+                }
+            }
+        }
+        & .binduz-er-recently-viewed-item{
+            border-right-color: #202020;
+            & .binduz-er-latest-news-item{
+                background: $black;
+                & .binduz-er-content{
+                    & .binduz-er-meta-item{
+                        & .binduz-er-meta-categories{
+                            & a{
+                                background: $theme-color;
+                                color: $white;
+                            }
+                        }
+                        & .binduz-er-meta-date{
+                            color: #999;
+                        }
+                    }
+                    & .binduz-er-title{
+                        & a{
+                            color: $white;
+                            &:hover{
+                                color: $theme-color;
+                            }
+                        }
+                    }
+                    & .binduz-er-meta-author{
+                        & span{
+                            color: #535353;
+                            & span{
+                                color: #999;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.binduz-er-editors-pack-title{
+    border-top: 1px solid #EAEAEA;
+    & .binduz-er-title{
+        font-size: 18px;
+        font-weight: 500;
+        color: $theme-color;
+        margin-bottom: 33px;
+        padding-top: 27px;
+    }
+}
+
+
+.binduz-er-editors-pack-thumb {
+    & img {
+        width: 100%;
+    }
+}
+
+.binduz-er-editors-pack-content {
+    background: $white;
+    margin-left: -205px;
+    padding: 80px 0 80px 80px;
+    @media #{$laptop} {
+        padding: 50px 0px 50px 50px;
+    }
+    @media #{$lg} {
+        padding: 30px 0px 30px 30px;
+    }
+    @media #{$md} {
+        padding: 30px 0 0;
+        margin-left: 0;
+    }
+    @media #{$xs} {
+        padding: 30px 0 0;
+        margin-left: 0;
+    }
+
+    & .binduz-er-meta-item {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+
+        @media #{$xs} {
+            display: block;
+        }
+
+        @media #{$sm} {
+            display: flex;
+        }
+
+        & .binduz-er-meta-categories {
+            & a {
+                background: #FFEAEA;
+                display: inline-block;
+                line-height: 30px;
+                padding: 0 15px;
+                color: $theme-color;
+                font-weight: 700;
+            }
+        }
+
+        & .binduz-er-meta-date {
+            & span {
+                color: $text-color;
+                margin-left: 20px;
+                display: inline-block;
+
+                @media #{$xs} {
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+
+                @media #{$sm} {
+                    margin-left: 20px;
+                    margin-top: 0;
+                }
+
+                & i {
+                    padding-right: 6px;
+                }
+            }
+        }
+    }
+
+    & .binduz-er-title {
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 500;
+        text-transform: inherit;
+        padding-top: 10px;
+        margin-bottom: 5px;
+        @media #{$xs} {
+            font-size: 23px;
+            line-height: 33px;
+        }
+        @media #{$sm} {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+
+    & .binduz-er-meta-author {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+
+        @media #{$xs} {
+            display: block;
+        }
+
+        @media #{$sm} {
+            display: flex;
+        }
+
+        & .binduz-er-author {
+            & img {
+                margin-right: 15px;
+            }
+
+            & span {
+                color: $text-color;
+
+                & span {
+                    color: $black;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &:hover{
+        & .binduz-er-meta-item{
+            & .binduz-er-meta-categories{
+                & a{
+                    background: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+
+    }
+}
+
+.binduz-er-editors-pack-item {
+    margin-left: -30px;
+    margin-right: -30px;
+
+    & .binduz-er-recently-viewed-item {
+        padding-left: 30px;
+        padding-right: 30px;
+        border-right: 1px solid #F1F1F1;
+
+        & .binduz-er-content {
+            & .binduz-er-meta-item {
+                @media #{$lg} {
+                    display: block;
+                }
+                & .binduz-er-meta-categories {
+                    & a {
+                        background: #FFEAEA;
+                        color: $theme-color;
+                    }
+                }
+                & .binduz-er-meta-date{
+                    @media #{$lg} {
+                        margin-left: 0;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            & .binduz-er-title{
+                font-weight: 500 !important;
+                margin-bottom: 0px;
+                & a{
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+            & .binduz-er-meta-author{
+                & span{
+                    font-size: 14px;
+                    font-style: italic;
+                    color: #BCBCBC;
+                    & span{
+                        font-style: normal;
+                        color: #777;
+                        padding-left: 4px;
+                    }
+                }
+            }
+        }
+        &:hover{
+            & .binduz-er-content{
+                & .binduz-er-meta-item{
+                    & .binduz-er-meta-categories{
+                        & a{
+                            background: $theme-color;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .col-lg-3 ,
+    & .col-lg-4 {
+        &:last-child {
+            & .binduz-er-recently-viewed-item {
+                border-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "xttrust/codeigniter-hmvc-extra",
+    "description": "This will install CodeIgniter 3.1.10 with HMVC for PHP 7 with some extra modules. Font awesome and Twitter Bootstrap integrated into the templates plus admin vali theme functioning.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "xttrust",
+            "email": "xttrust@live.com"
+        }
+    ],
+    
+    "require": {}
+}

@@ -1,0 +1,114 @@
+/*===========================
+    7.BINDUZ TRENDING TODAY css 
+===========================*/
+
+
+
+
+
+.binduz-er-trending-today-area{
+    padding-top: 53px;
+    padding-bottom: 21px;
+    position: relative;
+    z-index: 10;
+    & .binduz-er-bg-cover{
+        left: 0;
+        top: 0;
+        background-image: url(../images/trending-today-bg.jpg);
+        background-attachment: fixed;
+        &::before{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+        }
+    }
+}
+
+.binduz-er-trending-today-topbar{
+    & .binduz-er-trending-today-title {
+        & .binduz-er-title {
+            font-size: 30px;
+            display: block;
+            position: relative;
+            color: $white;
+            margin-bottom: 30px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 4px;
+                width: 75%;
+                background: $theme-color;
+                @media #{$laptop} {
+                    width: 71%;
+                }
+                @media #{$md} {
+                    width: 50%;
+                }
+                @media #{$xs} {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+.binduz-er-trending-today-item{
+    margin-bottom: 30px;
+    & .binduz-er-trending-news-list-box{
+        display: block;
+        & .binduz-er-thumb{
+            min-width: 100%;
+            height: auto;
+            margin-right: 0;
+            margin-bottom: 20px;
+            & img{
+                width: 100%;
+                transition: all linear 0.5s;
+            }
+            
+        }
+        & .binduz-er-content{
+            & .binduz-er-meta-item{
+                & .binduz-er-meta-categories{
+                    & a{
+                        background: $theme-color;
+                        color: $white;
+                    }
+                }
+                & .binduz-er-meta-date{
+                    & span{
+                        color: #999;
+                    }
+                }
+            }
+
+            & .binduz-er-trending-news-list-title{
+                & .binduz-er-title{
+                    & a{
+                        color: $white;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            & .binduz-er-thumb{
+                & img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+

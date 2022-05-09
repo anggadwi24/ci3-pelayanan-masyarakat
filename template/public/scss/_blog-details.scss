@@ -1,0 +1,600 @@
+/*===========================
+    19.BINDUZ BLOG DETAILS css 
+===========================*/
+
+
+
+
+
+.binduz-er-blog-details-box {
+    padding: 0px 50px 50px;
+    @media #{$md} {
+        padding: 0 30px 30px;
+    }
+    @media #{$xs} {
+        padding: 0 20px 30px;
+    }
+
+    & .binduz-er-text {
+        font-size: 18px;
+        line-height: 32px;
+        & .binduz-er-title{
+            font-size: 20px;
+            border-bottom: 1px solid #f7f7f7;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        &.binduz-er-blog-details-thumb-text{
+            @media #{$md} {
+                padding: 15px 0 0;
+            }
+            @media #{$xs} {
+                padding: 15px 0 0;
+            }
+        }
+
+        & p {
+            margin: 0 0 25px;
+        }
+
+        & ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            & li {
+                font-size: 18px;
+                margin-bottom: 8px;
+                position: relative;
+                padding-left: 26px;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 13px;
+                    height: 6px;
+                    width: 6px;
+                    border-radius: 50%;
+                    background: #DEDEDE;
+                }
+            }
+        }
+    }
+
+    & .binduz-er-quote-text {
+        box-shadow: 0px 16px 32px 10px rgba(0, 0, 0, 0.04);
+        padding: 41px 50px 45px;
+        margin-top: 55px;
+        position: relative;
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: '';
+            right: -35px;
+            bottom: -25px;
+            height: 134px;
+            width: 155px;
+            background-image: url(../images/icon/quote-bg.png);
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        @media #{$md} {
+            padding: 30px;
+        }
+        @media #{$xs} {
+            padding: 20px;
+        }
+
+        & p {
+            font-weight: 700;
+            color: $black;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 9px;
+            @media #{$xs} {
+                font-size: 17px;
+                line-height: 27px;
+            }
+        }
+
+        & span {
+            color: #BFBFBF;
+            font-style: italic;
+
+            & span {
+                font-style: normal;
+                color: $theme-color;
+                padding-left: 4px;
+            }
+        }
+    }
+}
+
+
+
+.binduz-er-blog-details-thumb-play {
+    position: relative;
+
+    & .binduz-er-play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        & a {
+            height: 120px;
+            width: 120px;
+            display: inline-block;
+            background: $white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 120px;
+            color: #E74D58;
+            font-size: 20px;
+            @media #{$xs} {
+                height: 80px;
+                width: 80px;
+                line-height: 80px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    & img {
+        width: 100%;
+    }
+}
+
+
+
+.binduz-er-social-share-tag{
+    border-top: 1px solid #F7F7F7;
+    border-bottom: 1px solid #F7F7F7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 53px;
+    & .binduz-er-tag{
+        & ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            & li{
+                display: inline-block;
+                & a{
+                    background: #F4F4F4;
+                    color: $text-color;
+                    display: inline-block;
+                    line-height: 30px;
+                    padding: 0 20px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    &:hover{
+                        background: #E74D58;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    & .binduz-er-social{
+        & ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            & li{
+                display: inline-block;
+                & a{
+                    display: inline-block;
+                    color: #D3D3D3;
+                    font-size: 18px;
+                    margin-left: 24px;
+                    @media #{$xs} {
+                        margin-left: 0;
+                        margin-right: 20px;
+                        margin-top: 20px;
+                    }
+                    @media #{$sm} {
+                        margin-left: 20px;
+                        margin-right: 0px;
+                        margin-top: 0;
+                    }
+                    &:hover{
+                        color: #E74D58;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.binduz-er-blog-post-prev-next{
+    padding-top: 20px;
+    padding-bottom: 13px;
+    position: relative;
+    border-bottom: 1px solid #F7F7F7;
+    & .binduz-er-post-bars{
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    & .binduz-er-post-prev-next{
+        width: 40%;
+        & span{
+            font-size: 14px;
+        }
+        & .binduz-er-title{
+            font-size: 16px;
+            -ms-word-wrap: break-word; 
+            word-wrap: break-word;
+        }
+    }
+}
+
+
+
+.binduz-er-blog-related-post{
+    padding-top: 50px;
+    & .binduz-er-related-post-title{
+        & .binduz-er-title{
+            font-size: 20px;
+            border-bottom: 1px solid #F1F1F1;
+            padding-bottom: 19px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+.binduz-er-blog-related-post-slide{
+    margin-right: -80px;
+    @media #{$xs} {
+        margin-right: 0;
+    }
+    & .binduz-er-video-post{
+        margin-right: 30px;
+        @media #{$xs} {
+            margin-right: 0;
+        }
+        & .binduz-er-latest-news-item{
+            & .binduz-er-content{
+                padding: 0;
+                & .binduz-er-meta-item{
+                    & .binduz-er-meta-categories{
+                        margin-right: 20px;
+                    }
+                    & .binduz-er-meta-date{
+                        margin-left: 0;
+                    }
+                }
+                & .binduz-er-title{
+                    font-size: 20px;
+                    letter-spacing: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.binduz-er-blog-post-form{
+    padding-top: 18px;
+    & .binduz-er-blog-post-title{
+        & .binduz-er-title{
+            font-size: 20px;
+            border-bottom: 1px solid #f7f7f7;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+    }
+    & .binduz-er-input-box{
+        margin-bottom: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        & i{
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            font-size: 14px;
+            color: #ababab;
+        }
+        & input{
+            width: 100%;
+            border: 2px solid #d8d8d8;
+            height: 70px;
+            padding-left: 30px;
+            font-size: 14px;
+            color: #ababab;
+            box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.04);
+            @include transition(0.3s);
+            &::placeholder{
+                color: #ababab;
+                opacity: 1;
+            }
+            &:focus,
+            &:hover{
+                box-shadow: none;
+            }
+        }
+        & textarea{
+            width: 100%;
+            border: 2px solid #d8d8d8;
+            height: 250px;
+            padding-left: 30px;
+            padding-top: 20px;
+            font-size: 14px;
+            color: #ababab;
+            box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.04);
+            resize: none;
+            @include transition(0.3s);
+            &::placeholder{
+                color: #ababab;
+                opacity: 1;
+            }
+            &:focus,
+            &:hover{
+                box-shadow: none;
+            }
+        }
+        & .nice-select{
+            width: 100%;
+            height: 70px;
+            padding: 0 30px;
+            line-height: 70px;
+            color: #ababab;
+            border: 2px solid #d8d8d8;
+            border-radius: 0;
+            box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.04);
+            @include transition(0.3s);
+            @media #{$md} {
+                margin-bottom: 20px;
+            }
+            @media #{$xs} {
+                margin-bottom: 20px;
+            }
+            &::after{
+                display: none;
+            }
+            &:focus,
+            &:hover{
+                box-shadow: none;
+            }
+            & .list{
+                border-radius: 0;
+                width: 100%;
+            }
+        }
+        & button{
+            border-radius: 0;
+            padding: 0 35px;
+            line-height: 60px;
+            background: #E74D58;
+            color: $white;
+            border: 1px solid #E74D58;
+            &:hover{
+                background-color: transparent;
+                color: #E74D58;
+            }
+        }
+    }
+}
+
+
+
+          
+.binduz-er-blog-bg-area{
+    height: 500px;
+    background-image: url(../images/blog-details-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.binduz-er-author-item-area{
+    &.binduz-er-author-item-layout-1{
+        & .binduz-er-author-item{
+            margin-top: -90px;
+        }
+    }
+}
+
+
+
+
+.binduz-er-blog-project-item{
+    position: relative;
+    @media #{$xs} {
+        margin-bottom: 30px;
+    }
+    & img{
+        width: 100%;
+    }
+    & .binduz-er-blog-project-overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(255,255,255,.6) 0%, rgba(0,0,0,.6) 75%);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        & a{
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            color: $white;
+            text-transform: capitalize;
+            margin-bottom: 26px;
+        }
+    }
+}
+
+
+
+.binduz-er-blog-post-newsletter{
+    padding-bottom: 35px;
+    @media #{$xs} {
+        display: none;
+    }
+    @media #{$sm} {
+        display: block;
+    }
+    & .binduz-er-populer-news-sidebar-newsletter{
+        & .binduz-er-newsletter-box{
+            padding: 60px 110px;
+            @media #{$lg} {
+                padding: 30px;
+            }
+            @media #{$xs} {
+                padding: 20px;
+            }
+            &::before{
+                display: none;
+            }
+            & p{
+                font-size: 16px;
+                font-weight: 400;
+                color: #fff;
+                padding-top: 35px;
+                margin-bottom: 0;
+            }
+            & .binduz-er-title{
+                padding-top: 6px;
+                font-size: 30px;
+                font-weight: 700;
+                padding-bottom: 25px;
+            }
+            & .binduz-er-input-box{
+                & button{
+                    background: #EA5F69;
+                    border-left: 10px solid #E74D58;
+                    color: $white;
+                    font-weight: 700;
+                    font-size: 16px;
+                    @media #{$xs} {
+                        position: static;
+                        border-left: 0;
+                        transform: translateY(0%);
+                        margin-top: 20px;
+                    }
+                    @media #{$sm} {
+                        position: absolute;
+                        border-left: 10px solid;
+                        transform: translateY(-50%);
+                        margin-top: 00px;
+                    }
+                }
+                & input{
+                    font-style: italic;
+                    color: $text-color;
+                    &::placeholder{
+                        opacity: 1;
+                        color: $text-color;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.binduz-er-blog-social-share{
+    padding-left: 50px;
+    margin-right: -50px;
+    @media #{$md} {
+        display: flex;
+        padding-left: 30px;
+    }
+    @media #{$xs} {
+        display: block;
+        padding-left: 30px;
+    }
+    @media #{$sm} {
+        display: flex;
+        padding-left: 30px;
+    }
+    & .binduz-er-item{
+        @media #{$md} {
+            width: 20%;
+        }
+        @media #{$xs} {
+            width: 100%;
+        }
+        @media #{$sm} {
+            width: 25%;
+        }
+        & a{
+            display: block;
+            & i{
+                background: #3B5999;
+                color: $white;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                line-height: 40px;
+                display: inline-block;
+                float: left;
+                margin-right: 15px;
+                @media #{$lg} {
+                    float: none;
+                }
+            }
+            & span{
+                font-size: 16px;
+                font-weight: 700;
+                color: $black;
+                margin-top: -10px;
+                display: inline-block;
+                line-height: 20px;
+                @media #{$lg} {
+                    display: block;
+                    margin-top: 10px;
+                }
+            }
+            & p{
+                color: $text-color;
+                margin-bottom: 0;
+            }
+        }
+        &:nth-child(2){
+            & a{
+                & i{
+                    background: #55ACEE;
+                }
+            }
+        }
+        &:nth-child(3){
+            & a{
+                & i{
+                    background: #CD201F;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

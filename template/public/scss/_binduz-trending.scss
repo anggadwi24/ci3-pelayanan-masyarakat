@@ -1,0 +1,703 @@
+/*===========================
+    4.BINDUZ TRENDING css 
+===========================*/
+
+
+
+
+.binduz-er-trending-area {
+    padding-top: 53px;
+    padding-bottom: 60px;
+    z-index: 9;
+    position: relative;
+    & .row{
+        width: 100%;
+    }
+}
+
+
+
+
+.binduz-er-trending-box {
+    margin-right: 30px;
+    
+    @media #{$lg} {
+        margin-right: 0;
+    }
+    @media #{$md} {
+        margin-right: 0;
+    }
+    @media #{$xs} {
+        margin-right: 0;
+        overflow: hidden;
+    }
+    & .binduz-er-title {
+
+        & .binduz-er-title {
+            font-size: 30px;
+            display: inline-block;
+            position: relative;
+            margin: 0;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 110%;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 4px;
+                width: 390px;
+                background: $theme-color;
+
+                @media #{$laptop} {
+                    width: 115%;
+                }
+
+                @media #{$lg} {
+                    width: 70%;
+                }
+
+                @media #{$md} {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+}
+
+.binduz-er-trending-news-item {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 10px;
+
+    @media #{$xs} {
+        display: none;
+    }
+
+    @media #{$sm} {
+        display: block;
+    }
+
+    & img {
+        width: 100%;
+        transition: all linear 0.5s;
+    }
+
+    & .binduz-er-trending-news-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-content: flex-end;
+
+        & .binduz-er-trending-news-meta {
+            position: absolute;
+            left: 40px;
+            bottom: 24px;
+            padding-right: 30px;
+            @media #{$laptop} {
+                left: 20px;
+            }
+
+            @media #{$lg} {
+                left: 20px;
+                bottom: 6px;
+            }
+
+            @media #{$md} {
+                left: 20px;
+                bottom: 6px;
+            }
+
+            @media #{$xs} {
+                left: 20px;
+                bottom: 6px;
+            }
+
+            & .binduz-er-meta-categories {
+                display: inline-block;
+
+                & a {
+                    display: inline-block;
+                    background: $theme-color;
+                    color: $white;
+                    line-height: 30px;
+                    padding: 0 14px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+
+            & .binduz-er-meta-date {
+                display: inline-block;
+                margin-left: 20px;
+
+                @media #{$lg} {
+                    display: block;
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+
+                @media #{$xs} {
+                    display: block;
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+
+                @media #{$sm} {
+                    display: inline-block;
+                    margin-left: 20px;
+                    margin-top: 0px;
+                }
+
+                & span {
+                    color: #C8C8C8;
+                }
+            }
+
+            & .binduz-er-trending-news-title {
+                margin-top: 12px;
+
+                & .binduz-er-title {
+                    font-size: 24px;
+                    line-height: 34px;
+                    @media #{$laptop} {
+                        font-size: 21px;
+                        line-height: 31px;
+                    }
+
+                    @media #{$lg} {
+                        font-size: 17px;
+                        line-height: 27px;
+                    }
+
+                    @media #{$md} {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+
+                    @media #{$xs} {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+
+                    & a {
+                        color: $white;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .binduz-er-news-share {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+
+            @media #{$lg} {
+                top: 10px;
+                right: 10px;
+            }
+
+            @media #{$md} {
+                display: none;
+            }
+
+            & a {
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                line-height: 40px;
+                background: rgba(255, 255, 255, 0.1);
+                color: $white;
+                display: inline-block;
+                border-radius: 5px;
+
+                &:hover {
+                    background: $theme-color;
+
+                }
+            }
+        }
+    }
+    &:hover{
+        & > img{
+            transform: scale(1.05);
+        }
+    }
+}
+
+.binduz-er-trending-news-topbar{
+    & .binduz-er-news-tab-btn {
+        & ul {
+            & li {
+                & a {
+                    font-size: 14px;
+                    color: #666;
+                    font-weight: 700;
+                    padding: 0 20px;
+
+                    @media #{$laptop} {
+                        padding: 0 15px;
+                    }
+
+                    @media #{$lg} {
+                        padding: 0 10px;
+                    }
+
+                    @media #{$md} {
+                        padding: 0 8px;
+                    }
+
+                    @media #{$xs} {
+                        padding: 30px 15px 0 0;
+                    }
+
+                    @media #{$sm} {
+                        padding: 30px 20px 0 0;
+                    }
+
+                    &.active {
+                        background-color: transparent;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.binduz-er-trending-news-list-item {
+    margin-left: -30px;
+    @media #{$lg} {
+        margin-left: 0;
+    }
+    @media #{$md} {
+        margin-left: 0;
+    }
+    @media #{$xs} {
+        margin-left: 0;
+    }
+
+    & .tab-content {
+        padding-top: 50px;
+    }
+}
+
+
+.binduz-er-trending-news-list-box {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #EAEAEA;
+
+    @media #{$lg} {
+        display: block;
+    }
+
+    @media #{$md} {
+        display: block;
+    }
+
+    @media #{$xs} {
+        display: block;
+    }
+
+    & .binduz-er-thumb {
+        min-width: 116px;
+        margin-right: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 100px;
+
+        @media #{$lg} {
+            height: auto;
+            width: 100px;
+            margin-bottom: 15px;
+        }
+
+        @media #{$md} {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+
+        @media #{$xs} {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+    }
+
+    & .binduz-er-content {
+        & .binduz-er-meta-item {
+            & .binduz-er-meta-categories {
+                display: inline-block;
+
+                & a {
+                    display: inline-block;
+                    background: #FFEAEA;
+                    border-radius: 5px;
+                    margin-right:10px;
+                    color: $theme-color;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    padding: 0 15px;
+                    
+                }
+            }
+
+            & .binduz-er-meta-date {
+                display: inline-block;
+                margin-left: 20px;
+
+                @media #{$laptop} {
+                    margin-left: 5px;
+                }
+
+                @media #{$lg} {
+                    margin-left: 5px;
+                    margin-top: 10px;
+                }
+
+                @media #{$xs} {
+                    margin-left: 0px;
+                    margin-top: 10px;
+                }
+
+                @media #{$sm} {
+                    margin-left: 20px;
+                    margin-top: 0px;
+                }
+
+                & span {
+                    font-size: 14px;
+                    color: #666;
+
+                    @media #{$laptop} {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        & .binduz-er-trending-news-list-title {
+            padding-top: 8px;
+
+            & .binduz-er-title {
+                margin-bottom: 0;
+                font-size: 20px;
+                line-height: 30px;
+
+                @media #{$laptop} {
+                    font-size: 17px;
+                    line-height: 27px;
+                }
+
+                @media #{$lg} {
+                    font-size: 18px;
+                }
+
+                & a {
+                    color: $black;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+    &:hover{
+        & .binduz-er-content{
+            & .binduz-er-meta-item{
+                & .binduz-er-meta-categories{
+                    & a{
+                        background: $theme-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.binduz-er-sidebar-categories {
+    @media #{$md} {
+        margin-top: 50px;
+    }
+
+    @media #{$xs} {
+        margin-top: 50px;
+    }
+
+    & .binduz-er-sidebar-title {
+        border-bottom: 2px solid #FFEAEA;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 100%;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #FFEAEA;
+            border-right: 10px solid transparent;
+        }
+
+        & .binduz-er-title {
+            display: inline-block;
+            background: #FFEAEA;
+            margin-bottom: 0;
+            line-height: 30px;
+            padding: 0 20px;
+            font-size: 14px;
+            font-weight: 700;
+            color: $theme-color;
+        }
+    }
+
+    & .binduz-er-categories-list {
+        margin-top: 50px;
+
+        & .binduz-er-item {
+            background-image: url(../images/categories-list-bg-1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 30px 20px;
+            position: relative;
+            z-index: 10;
+            border-bottom: 1px solid #fff;
+
+            @media #{$lg} {
+                padding: 20px 20px;
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: -1;
+            }
+
+            & a {
+                display: block;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                justify-content: space-between;
+
+                & span {
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 700;
+                    background: rgba(255, 255, 255, 0.20);
+                    color: $white;
+                    padding: 0 20px;
+                    line-height: 30px;
+                    border-radius: 5px;
+
+                    &.binduz-er-number {
+                        padding: 0;
+                        height: 30px;
+                        width: 30px;
+                        text-align: center;
+                        line-height: 30px;
+
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                background-image: url(../images/categories-list-bg-2.jpg);
+            }
+
+            &:nth-child(3) {
+                background-image: url(../images/categories-list-bg-3.jpg);
+            }
+
+            &:nth-child(4) {
+                background-image: url(../images/categories-list-bg-4.jpg);
+            }
+
+            &:nth-child(5) {
+                background-image: url(../images/categories-list-bg-5.jpg);
+            }
+        }
+    }
+
+}
+
+
+.binduz-er-featured-slider {
+    @media #{$md} {
+        margin-top: 0;
+    }
+}
+
+
+
+
+.binduz-er-trending-news-box-area {
+    padding-top: 10px;
+
+    & .binduz-er-trending-news-box {
+        padding: 35px 40px 0;
+        background: $white;
+        @media #{$lg} {
+            padding: 10px 10px 0;
+        }
+        @media #{$xs} {
+            padding: 15px 20px 0;
+        }
+    }
+}
+
+
+
+.binduz-er-trending-news-box {
+    & .binduz-er-trending-news-topbar {
+        margin-bottom: 13px;
+
+        & .binduz-er-title {
+            font-size: 24px;
+            width: 70%;
+            position: relative;
+            z-index: 5;
+            @media #{$laptop} {
+                width: 64%;
+            }
+            @media #{$lg} {
+                width: 57%;
+            }
+            @media #{$md} {
+                width: 55%;
+            }
+            @media #{$xs} {
+                width: 100%;
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 4px;
+                width: 78%;
+                background: #F3F3F3;
+                z-index: -1;
+                @media #{$laptop} {
+                    width: 72%;
+                }
+                @media #{$lg} {
+                    width: 62%;
+                }
+                @media #{$md} {
+                    width: 44%;
+                }
+                @media #{$xs} {
+                    width: 0%;
+                }
+                @media #{$sm} {
+                    width: 57%;
+                }
+            }
+        }
+
+        & ul {
+            & li {
+                margin-left: 40px;
+                @media #{$md} {
+                    margin-left: 15px;
+                }
+                @media #{$xs} {
+                    margin-left: 0px;
+                    margin-right: 15px;
+                }
+
+                & a {
+                    padding: 0;
+                    color: #666;
+                    font-size: 14px;
+                    font-weight: 700;
+
+                    &.active {
+                        background-color: transparent;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    & .binduz-er-video-post {
+        &.binduz-er-recently-viewed-item {
+            & .binduz-er-latest-news-item {
+                & .binduz-er-content {
+                    & .binduz-er-meta-item {
+                        @media #{$lg} {
+                            display: block;
+                        }
+                        & .binduz-er-meta-categories {
+                            & a {
+                                background: #E74D58;
+                                color: $white;
+                                
+                            }
+                        }
+                        & .binduz-er-meta-date{
+                            @media #{$lg} {
+                                margin-left: 0;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                    & .binduz-er-title {
+                        font-weight: 700;
+                        & a{
+                            &:hover{
+                                color: $theme-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

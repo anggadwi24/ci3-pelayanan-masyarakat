@@ -1,0 +1,336 @@
+/*===========================
+    5.BINDUZ FEATURED css 
+===========================*/
+
+
+
+
+.binduz-er-featured-area {
+    background: #F7F7F7;
+    padding: 60px 0;
+
+    & .binduz-er-featured-title {
+        & .binduz-er-title {
+            font-size: 30px;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 30px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 110%;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 4px;
+                width: 200px;
+                background: $theme-color;
+                @media #{$laptop} {
+                    width: 150px;
+                }
+                @media #{$lg} {
+                    width: 60%;
+                }
+                @media #{$md} {
+                    width: 90%;
+                }
+                @media #{$xs} {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+.binduz-er-featured-slider {}
+
+.binduz-er-featured-slider-item {
+    & .binduz-er-trending-news-list-box {
+        border-bottom: 0;
+        background: $white;
+        border-radius: 10px;
+        overflow: hidden;
+        display: block;
+
+        & .binduz-er-thumb {
+            min-width: 100%;
+            border-radius: 0;
+            height: auto;
+
+            & img {
+                @include transition(0.5s);
+                width: 100%;
+            }
+        }
+
+        & .binduz-er-content {
+            padding: 30px 30px 22px;
+        }
+
+        &:hover {
+            & .binduz-er-thumb {
+                & img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    & .slick-arrow {
+        position: absolute;
+        right: 0;
+        top: -65px;
+        cursor: pointer;
+        z-index: 9;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        color: $black;
+        background: $white;
+        border-radius: 5px;
+        @include transition(0.3s);
+
+        &:hover {
+            background: $theme-color;
+            color: $white;
+        }
+
+        &.prev {
+            right: 40px;
+        }
+
+        &.next {
+            right: 0px;
+        }
+    }
+}
+
+
+
+.binduz-er-sidebar-social {
+    & .binduz-er-sidebar-title {
+        border-bottom: 2px solid #fff;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 100%;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #fff;
+            border-right: 10px solid transparent;
+        }
+
+        & .binduz-er-title {
+            display: inline-block;
+            background: #fff;
+            margin-bottom: 0;
+            line-height: 30px;
+            padding: 0 20px;
+            font-size: 14px;
+            font-weight: 700;
+            color: $theme-color;
+        }
+    }
+    & .binduz-er-social-list{
+        & .binduz-er-list{
+            margin-top: 35px;
+            & a{
+                display: flex;
+                justify-content: space-between;
+                background: $white;
+                border-radius: 10px;
+                padding: 10px 30px 10px 10px;
+                align-items: center;
+                margin-bottom: 8px;
+                & span{
+                    font-size: 14px;
+                    color: $black;
+                    & span{
+                        font-weight: 700;
+                    }
+                    & i{
+                        height: 40px;
+                        width: 40px;
+                        background: #3B5999;
+                        text-align: center;
+                        line-height: 40px;
+                        color: $white;
+                        border-radius: 6px;
+                        margin-right: 30px;
+                        @media #{$laptop} {
+                            margin-right: 5px;
+                        }
+                        @media #{$lg} {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    & span{
+                        & i{
+                            background: #55ACEE;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    & span{
+                        & i{
+                            background: #0057FF;
+                        }
+                    }
+                }
+                &:nth-child(4){
+                    & span{
+                        & i{
+                            background: #CD201F;
+                        }
+                    }
+                }
+                &:hover{
+                    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+    & .binduz-er-sidebar-add{
+        background-image: url(../images/space-bg-1.png);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        padding: 14px 20px 20px;
+        @media #{$md} {
+            width: 40%;
+        }
+        & .binduz-er-title{
+            color: $white;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: inherit;
+            & span{
+                font-weight: 300;
+                display: block;
+            }
+        }
+        & a{
+            background: $theme-color;
+            color: $white;
+            border-color: $theme-color;
+            padding: 0 30px;
+            line-height: 40px;
+        }
+    }
+
+}
+
+.binduz-er-featured-2-area{
+    & .binduz-er-featured-title{
+        border-top: 1px solid #EAEAEA;
+        padding-top: 26px;
+        @media #{$md} {
+            margin-top: 40px;
+        }
+        @media #{$xs} {
+            margin-top: 40px;
+        }
+        & .binduz-er-title{
+            font-size: 18px;
+            font-weight: 500;
+            color: $theme-color;
+            margin-bottom: 38px;
+        }
+    }
+
+}
+
+
+.binduz-er-featured-slider-2{
+    & .slick-arrow{
+        position: absolute;
+        top: -60px;
+        z-index: 9;
+        cursor: pointer;
+        font-size: 18px;
+        &.prev{
+            right: 20px;
+        }
+        &.next{
+            right: 0;
+        }
+    }
+}
+.binduz-er-featured-item{
+    & .binduz-er-thumb{
+        position: relative;
+        & .binduz-er-icon{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            & a{
+                height: 50px;
+                width: 50px;
+                background: #F63A3A;
+                text-align: center;
+                line-height: 50px;
+                display: inline-block;
+                color: $white;
+                
+            }
+        }
+        & img{
+            width: 100%;
+        }
+    }
+    & .binduz-er-content{
+        padding-top: 22px;
+        & .binduz-er-title{
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+        & ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            & li{
+                color: #777;
+                border-top: 1px solid #EAEAEA;
+                padding: 15px 0;
+                & i{
+                    color: #D2D2D2;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
